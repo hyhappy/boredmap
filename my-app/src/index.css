@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 100px;
+  -webkit-text-size-adjust: 100%;
+  user-select: none;
+}
+
+body {
+  margin: 0;
+  font-size: .18rem;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+}
+
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+#root {
+ height: 100%;
+}
+
+.m-page {
+    height: 100%;
+    background: rgba(143,208,211,1);
+    display: flex;
+    flex-direction: column;
+}

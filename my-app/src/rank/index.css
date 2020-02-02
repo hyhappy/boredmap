@@ -1,0 +1,74 @@
+.m-rank {
+    flex: 1;
+    height: .1px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.m-rank .first {
+    height: 1.23rem;
+    width: 2.37rem;
+    background: url(http://localhost:5000/%E7%BC%96%E7%BB%84%206@2x.png);
+    background-size: 100%;
+    margin-top: .23rem;
+    padding-top: .15rem;
+    text-align: center;
+    color:rgba(51,73,64,1);
+    line-height: .21rem;
+}
+
+.m-rank .current {
+    margin: 0 .32rem;
+    height: .7rem;
+    display: flex;
+    padding: .18rem .2rem 0;
+    background: #EC6B61;
+    color: #fff;
+    line-height: .21rem;
+}
+
+.m-rank .current .num {
+    color: #FFDB76;
+    flex: 1;
+    text-align: right;
+}
+
+.m-rank .list {
+    flex: 1;
+    height: .1rem;
+    width: 100%;
+    margin-top: .1rem;
+    padding: 0 .2rem;
+    color: #666;
+    overflow: scroll;
+}
+
+.m-rank .list .item {
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: .04rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: .12rem;
+    height: .59rem;
+    padding: 0 .12rem 0 .17rem;
+}
+
+.m-rank .list .item .order {
+    font-size: .2rem;
+    width: .28rem;
+    text-align: left;
+}
+
+.m-rank .list .item .province {
+    flex: 1;
+    text-align: left;
+}
+
+.m-rank .list .item .order.highlight {
+    font-size: .32rem;
+    color: #F6C751;
+}
