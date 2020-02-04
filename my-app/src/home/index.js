@@ -37,7 +37,7 @@ function Home() {
             if (contRef) {
                 const style = contRef.current.style;
                 style.webkitTransformOrigin = style.transformOrigin = x+'px ' + (y) + 'px';
-                style.webkitTransform = style.transform = 'scale(3)';
+                style.webkitTransform = style.transform = 'scale(2.5)';
             }
             setTimeout(() => {
                 setLightInfo(data);

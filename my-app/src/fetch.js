@@ -13,14 +13,14 @@ const fetch = (url, options = {}) => {
         return Promise.reject(res)
     })
 }
-export const fetchRankData = (data) => fetch('http://yapi.corp.qunar.com/mock/4159/rankdata', {
+export const fetchRankData = (data) => fetch('', {
     body: JSON.stringify(data)
 })
 
-export const fetchHomeData = () => fetch('http://yapi.corp.qunar.com/mock/4159/homedata')
+export const fetchHomeData = () => fetch('')
 
 
-export const light = (data) => fetch('http://yapi.corp.qunar.com/mock/4159/uuid', {
+export const light = (data) => fetch('', {
     data: JSON.stringify(data),
     method: 'POST'
 })
