@@ -2,19 +2,21 @@ import React from 'react';
 
 export default function(props) {
     return (
-        <div style={{
+        <div className="m-header" style={{
             height: '.44rem',
         }}>
             <span
                 style={{
-                    height: '.44rem',
                     display: 'inline-block',
                     // width: '.2rem',
-                    padding: '.12rem .15rem 0'
+                    margin: '.1rem 0 0 .1rem',
+                    background: 'url(http://localhost:5000/image/back.png)',
+                    width: '.3rem',
+                    height:'.3rem',
+                    backgroundSize:'100%'
                 }}
                 onClick={props.onLeft}
             >
-                <svg t="1580627523065" className="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1106" width="20" height="20"><path d="M247.405763 534.418592 726.182081 1013.229702c13.932314 13.896498 36.453237 13.896498 50.384527 0 13.933337-13.933337 13.933337-36.489052 0-50.421366L321.165674 507.371586 769.047354 59.45409c13.541411-13.505595 13.541411-35.419697 0-48.924269-13.505595-13.576203-35.419697-13.576203-48.960085 0l-465.164299 465.128483c-1.817392 1.817392-2.707668 4.02671-4.02671 6.128581-1.104147 0.819668-2.457981 1.24741-3.492544 2.28095-13.896498 13.896498-13.896498 36.453237 0 50.349735L247.405763 534.418592 247.405763 534.418592z" p-id="1107"></path></svg>            
             </span>
         </div>
     )

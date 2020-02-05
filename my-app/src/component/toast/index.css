@@ -1,0 +1,31 @@
+.cf-toast {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+    z-index: 1500;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .8);
+    padding: 15px;
+}
+
+.cf-toast.focus {
+    top: 80%;
+}
+
+.cf-toast .text {
+    white-space: nowrap;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.cf-toast .ico {
+    height: 35px;
+    margin-bottom: 10px;
+}

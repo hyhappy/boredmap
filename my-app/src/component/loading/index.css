@@ -1,0 +1,37 @@
+@keyframes rotate {
+    from {
+        transform: rotatez(0); }
+    to {
+        transform: rotatez(360deg);
+    }
+}
+
+.cf-modal {
+    position: absolute;
+}
+
+.cf-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.cf-loading .ico {
+    display: block;
+    width: 40px;
+    height: 40px;
+    animation: rotate 1s infinite linear;
+    transform-origin: center;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAAVFBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////8wXzyWAAAAG3RSTlMAHxQpBeLzs2GdDOyoUz/cSTPOvJOJgnNtw3sJ+5rlAAABP0lEQVRIx92V226DMAyGnXNoOBVKgfn933Pzkm0aBWpfTNr2X4CQ+ERifw7wP9OPqau0hJiRkhSfUJgT+EjEEj5yxxL+bppCJGBHp4zcJDX2RKwXEERNYx3hB6NaLQPMgIi1BLo4adthwRzDR6qCNHJVWj5yzYSTNPGFCN+DJO0tTAp+TVQXv4RRPE/8XEYlkDCsgtlyr5FSSRzDHEFfDNux3t3L+jLhOTa6b5LNjPVUn+rODt0CwljOO/ZB6OnWnwqf0mY84rNzb9q2znqkXE90R2z2mhPhOFpvnk/nP3Zhx9tARHcBMOZRKb+roK48jgbUgLjqTfn1obX242P1e1HzuZBcfLv64dhAT4gDaDt0Tf6DJnveakfIADDSzgB6elSM0zYWuxVYh7jCk8QQmjKpA+18idzRM7UPV/hbeQVGZhwLPqoufgAAAABJRU5ErkJggg==);
+    background-size: 100%
+}
+
+.cf-loading .text {
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 10px;
+}

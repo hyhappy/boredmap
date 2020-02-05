@@ -1,4 +1,4 @@
-.m-rank {
+.m-rank-cont {
     flex: 1;
     height: .1px;
 
@@ -6,28 +6,28 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    background-color: #3DA89E;
+}
+.m-rank .m-header {
+    position: absolute;
+    top: 0;
 }
 
-.m-rank .first {
-    height: 1.23rem;
-    width: 2.37rem;
-    background: url(http://localhost:5000/%E7%BC%96%E7%BB%84%206@2x.png);
-    background-size: 100%;
-    margin-top: .23rem;
-    padding-top: .15rem;
-    text-align: center;
-    color:rgba(51,73,64,1);
-    line-height: .21rem;
+.m-rank .header-img {
+    width: 100%;
 }
 
 .m-rank .current {
-    margin: 0 .32rem;
-    height: .7rem;
+    height: .3rem;
     display: flex;
-    padding: .18rem .2rem 0;
-    background: #EC6B61;
-    color: #fff;
-    line-height: .21rem;
+    margin: .05rem 0 .12rem;
+    padding: 0 .21rem 0 .25rem;
+    color: #666;
+    align-items: center;
+    background: #fff;
+    border-radius: .04rem;
+    font-size: .14rem;
+    width: 3.35rem;
 }
 
 .m-rank .current .num {
@@ -54,13 +54,15 @@
     align-items: center;
     margin-bottom: .12rem;
     height: .59rem;
-    padding: 0 .12rem 0 .17rem;
+    padding: 0 .12rem 0 0;
 }
 
 .m-rank .list .item .order {
     font-size: .2rem;
-    width: .28rem;
-    text-align: left;
+    width: .61rem;
+    height: .23rem;
+    line-height: .23rem;
+    text-align: center;
 }
 
 .m-rank .list .item .province {
@@ -68,7 +70,10 @@
     text-align: left;
 }
 
-.m-rank .list .item .order.highlight {
-    font-size: .32rem;
-    color: #F6C751;
+.m-rank .list .item .order img {
+    width: .22rem;
+}
+.m-rank .list .item .num {
+    font-size: .21rem;
+    color:#F6C751;
 }

@@ -9,15 +9,12 @@ function Intro(props) {
                 props.history.goBack()
             }} />
             <div style={{
-                padding: '.4rem .25rem',
-                flex: '1',
-                height: '.1px',
-                overflow: 'scroll'
+                paddingTop: '.2rem',
             }}>
                 <img style={{
                     width: '100%',
                     //   margin: '.5rem .25rem',
-                }} src="http://localhost:5000/WX20200202-124217@2x.png" alt=""/>
+                }} src="http://localhost:5000/image/ico_intro.png" alt=""/>
             </div>
         </div>
     );
