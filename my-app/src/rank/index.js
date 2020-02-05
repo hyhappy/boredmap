@@ -34,7 +34,7 @@ function Rank(props) {
 				props.history.goBack();
 			}}/>
 			<div className="m-rank-cont">
-                <img className="header-img" src="http://localhost:5000/image/ico_rank_bg.png" alt=""/>
+                <img className="header-img" src="http://qdev.qunar.com:5000/image/ico_rank_bg.png" alt=""/>
                 {
                     data?
                     <>
@@ -48,7 +48,7 @@ function Rank(props) {
 							return (
 							<div className="item">
                                 <span className="order">{
-                                    index<3?<img src={`http://localhost:5000/image/ico_rank_num${index+1}.png`} alt=""/>:(index+1)}</span>
+                                    index<3?<img src={`http://qdev.qunar.com:5000/image/ico_rank_num${index+1}.png`} alt=""/>:(index+1)}</span>
                                 
 								<span className="province">{item.province}</span>
 								<span className="num">{item.provinceSum}</span>

@@ -10,7 +10,7 @@ export default function(props) {
                     display: 'inline-block',
                     // width: '.2rem',
                     margin: '.1rem 0 0 .1rem',
-                    background: 'url(http://localhost:5000/image/back.png)',
+                    background: 'url(http://qdev.qunar.com:5000/image/back.png)',
                     width: '.3rem',
                     height:'.3rem',
                     backgroundSize:'100%'

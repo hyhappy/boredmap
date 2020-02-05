@@ -14,7 +14,7 @@ function Intro(props) {
                 <img style={{
                     width: '100%',
                     //   margin: '.5rem .25rem',
-                }} src="http://localhost:5000/image/ico_intro.png" alt=""/>
+                }} src="http://qdev.qunar.com:5000/image/ico_intro.png" alt=""/>
             </div>
         </div>
     );

@@ -40,8 +40,8 @@ function Home() {
                 pointRef.current.style.top = y + 'px';
                 pointRef.current.style.display = 'block';
     
-                mapContRef.current.style.left = `${160-x}px`
-                mapRef.current.style.webkitTransform = mapRef.current.style.transform = 'scale(2.5)';
+                // mapContRef.current.style.left = `${160-x}px`
+                mapRef.current.style.webkitTransform = mapRef.current.style.transform = 'translate(-90px, 0) scale(2.5)';
 
                 setTimeout(() => {
                     setLightInfo(data);
@@ -68,14 +68,14 @@ function Home() {
             }}>
                 {isShowImg?
                 <>
-                <img className="logo" src="http://localhost:5000/image/ico_home_title.png" alt=""/>
+                <img className="logo" src="http://qdev.qunar.com:5000/image/ico_home_title.png" alt=""/>
 
                 <div className="total">
                     已有<span className="num">{sum}</span>人<br/>点亮了地图
                 </div></>:null}
                 <div className="china-map" ref={mapRef}>
                     <div ref={mapContRef} style={{position: 'absolute', width: '100%'}}>
-                    <img src="http://localhost:5000/image/ico_china_map.png" alt=""/>
+                    <img src="http://qdev.qunar.com:5000/image/ico_china_map.png" alt=""/>
                     <div className="point" ref={pointRef}/>
                     </div>
                 </div>
@@ -83,14 +83,14 @@ function Home() {
                     isShowImg ? <>
                     <Link to="/rank" className="rank">
                     <img
-                        src="http://localhost:5000/image/ico_home_rank.png" alt=""
+                        src="http://qdev.qunar.com:5000/image/ico_home_rank.png" alt=""
                     />
                 </Link>
                 <img
                     onClick={onLightTap}
                     style={{
                         width: '2.47rem',
-                    }} src="http://localhost:5000/image/ico_home_active_btn.png" alt=""
+                    }} src="http://qdev.qunar.com:5000/image/ico_home_active_btn.png" alt=""
                 />
                     
                 
